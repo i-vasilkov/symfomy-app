@@ -10,4 +10,6 @@ RUN curl -sS https://getcomposer.org/installer | \
         php -- --filename=composer \
         --install-dir=/usr/local/bin
 
+ADD ./php/php.ini /usr/local/etc/php/php.ini
+
 WORKDIR /var/www/app
